@@ -1,0 +1,121 @@
+<head>
+    <script type="text/javascript" src="index.js"></script>
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body> 
+	<header>
+		<div class="headline-container">
+			<h1 class="headline-text">HAND CRICKET</h1>
+            <H3 class="sub-headline">Welcome to Hand Cricket</H3>
+		</div>
+	</header>
+    <main class="container">
+			<div class="paraghraph">
+                <p class="card-text">A new way to play the same old game. Hand cricket is a game played by many school kids for fun. It uses the concepts of cricket and played with hands. 
+					Hand Cricket is a game in which two players show scores on their respective fingers. 
+					If the scores are equal, the batsman is declared out. Else, the score of the batsman is added to 
+					the total runs of the batting team.
+				</p>      
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="img-fluid rounded float-center shadow"
+                        src="https://www.cricketfile.com/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-25-at-5.37.10-AM-300x300.jpeg"
+               style="width: 400px; height: 200px;">
+               </div>
+               <div class="column">
+                    <img class="img-fluid rounded float-center shadow"
+                        src="https://gameskip.com/playstore/screenshot/hand-cricket-3.jpg"
+               style="width: 400px; height: 200px;">
+               </div>
+			</div>
+	</main>
+    
+    <div class="container_input">
+    <H3 class="text">Click Here To Select Input</H3>
+    </div>
+
+<div class="button-container">
+    <button id ="button1" onclick="buttonClicked( 1 )">1</button>     
+    <button id ="button2" onclick="buttonClicked( 2 )">2</button>
+    <button id ="button3" onclick="buttonClicked( 3 )">3</button>
+    <button id ="button4" onclick="buttonClicked( 4 )">4</button>
+    <button id ="button5" onclick="buttonClicked( 5 )">5</button>
+    <button id ="button6" onclick="buttonClicked( 6 )">6</button>
+</div>
+
+<div class="submit-button-conatiner">
+    <button id="Submit" onclick="onSubmitButtonClick()">Submit</button>
+</div>
+
+<div class="row">
+    <div class="column">
+<div id="first" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/456027115/photo/mans-hand-with-the-index-finger.jpg?s=612x612&w=0&k=20&c=ybgQq8lEAH__BoWb9iBmzhAqfpYNXZ3NLRa1H_zCsPE="/> 
+</div> 
+
+<div id="second" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/493613185/photo/victory.jpg?s=612x612&w=0&k=20&c=Cclh5EerWygKdd34YdRerabRvfq6owD-N-FCoSMaiMg="/> 
+</div> 
+
+<div id="third" style="height:400px; width:400px; display:none;">
+        <img src="https://qph.cf2.quoracdn.net/main-qimg-113b395e85852f8e267ca17fc59a5889-lq"/> 
+</div> 
+
+<div id="fourth" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/153507886/photo/number-four.jpg?s=612x612&w=0&k=20&c=Z32qjhT1Sa8sN5AdZ9CoZLXp2fF5sPcxBbsRRI4AZ3w="/> 
+</div> 
+
+<div id="fifth" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/179376248/photo/stop-concept-with-hand-up.jpg?s=612x612&w=0&k=20&c=kcFqSxqw2lmBZWg1PM1TYVqrSbtkMwd4IyMFMmkRR9c="/> 
+</div> 
+
+<div id="sixth" style="height:400px; width:400px; display:none;">
+        <img src="https://png.pngtree.com/png-vector/20201227/ourlarge/pngtree-thumb-up-gesture-png-image_2657834.jpg"/> 
+</div> 
+</div>
+<div class="column">
+<div id="gen_first" style="height:400px; width:400px;  display:none;">
+        <img src="https://media.istockphoto.com/id/456027115/photo/mans-hand-with-the-index-finger.jpg?s=612x612&w=0&k=20&c=ybgQq8lEAH__BoWb9iBmzhAqfpYNXZ3NLRa1H_zCsPE="/> 
+</div> 
+
+<div id="gen_second" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/493613185/photo/victory.jpg?s=612x612&w=0&k=20&c=Cclh5EerWygKdd34YdRerabRvfq6owD-N-FCoSMaiMg="/> 
+</div> 
+
+<div id="gen_third" style="height:400px; width:400px; display:none;">
+        <img src="https://qph.cf2.quoracdn.net/main-qimg-113b395e85852f8e267ca17fc59a5889-lq"/> 
+</div> 
+
+<div id="gen_fourth" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/153507886/photo/number-four.jpg?s=612x612&w=0&k=20&c=Z32qjhT1Sa8sN5AdZ9CoZLXp2fF5sPcxBbsRRI4AZ3w="/> 
+</div> 
+
+<div id="gen_fifth" style="height:400px; width:400px; display:none;">
+        <img src="https://media.istockphoto.com/id/179376248/photo/stop-concept-with-hand-up.jpg?s=612x612&w=0&k=20&c=kcFqSxqw2lmBZWg1PM1TYVqrSbtkMwd4IyMFMmkRR9c="/> 
+</div> 
+
+<div id="gen_sixth" style="height:400px; width:400px; display:none;">
+        <img src="https://png.pngtree.com/png-vector/20201227/ourlarge/pngtree-thumb-up-gesture-png-image_2657834.jpg"/> 
+</div>
+</div> 
+</div> 
+    
+<div id="result" class="col-md-6">
+    <div class="card shadow">
+        <div class="card-body">
+            <h4 class="card-title">Output:</h4>
+            <pre
+                class="card-body"><code id="textResult" hidden="true" class="language-json"></code></pre>
+        </div>
+    </div>
+</div
+      
+</div>
+</div>
+
+</body>
+</html>
+
+ 
